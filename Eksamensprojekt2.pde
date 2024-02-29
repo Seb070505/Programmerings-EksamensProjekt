@@ -17,7 +17,7 @@ void draw(){
   
  champ1.tegnKnap();
  champ2.tegnKnap();
- //champ3.tegnKnap();
+ champ3.tegnKnap();
   
 }
 
