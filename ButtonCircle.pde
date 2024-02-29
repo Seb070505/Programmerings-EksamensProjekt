@@ -2,7 +2,7 @@ class ButtonCircle extends ButtonBase {
 
   
   ButtonCircle(float posX, float posY, float diameter, String billedNavn){
-    super(400,400,100,loadImage(billedNavn));
+    super(posX,posY,diameter,loadImage(billedNavn));
     
   }
   
