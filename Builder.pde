@@ -4,7 +4,7 @@ interface Builder{
   Builder BloodThirster();
   Builder EssenceReaver();
   Builder GuinsoosRageblade();
-  Builder ImmortalSheildbow();
+  Builder ImmortalShieldbow();
   Builder InfinityEdge();
   Builder KrakenSlayer();
   Builder LordDominiksRegards();
@@ -15,7 +15,7 @@ interface Builder{
   Builder PhantomDancer();
   Builder RapidFirecannon();
   Builder RunaansHurricane();
-  Builder StarikkShiv();
+  Builder StatikkShiv();
   Builder Stormrazor();
   Builder Terminus();
   Builder TheCollector();
