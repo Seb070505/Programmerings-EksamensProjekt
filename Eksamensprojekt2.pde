@@ -3,13 +3,25 @@
   ButtonCircle jhin;
   ButtonCircle udregnDPS;
   
+  Karakter vayne;
+  Karakter ashe;
+  Karakter jhin;
+  
+  
   void setup(){
   size(1600,800);
   background(255);
+  
+  
+  
   vayne = new ButtonCircle(400,100,100,"VayneSquare.png");
   ashe = new ButtonCircle(1200,100,100,"AsheSquare.png");
   jhin = new ButtonCircle(width/2,100,100,"JhinSquare.png");
   udregnDPS = new ButtonCircle(100,100,100,"rødknap.png");
+  
+  vayne = new Karakter(1.027138, 99.95, 0, 0);
+  ashe = new Karakter(1.0304938, 109.15, 0, 0);
+  jhin = new Karakter(0.92, 132.88, 0, 0);
   
 }
 
