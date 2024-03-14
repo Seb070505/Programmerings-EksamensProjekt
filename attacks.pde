@@ -1,8 +1,9 @@
-class Atack implements Component{
+class Attack implements Component{
   String navn;
-  int Dmg, Time;
+  int Dmg;
+  float Time;
   
-  Atack(String navn){
+  Attack(String navn){
     this.navn = navn;
   }
   //void setHoldbarhed(){
@@ -10,7 +11,7 @@ class Atack implements Component{
   String getNavn(){
     return navn;
   }
-  int getTime(){
+  float getTime(){
     return Time;
   }
   int getDmg(){
