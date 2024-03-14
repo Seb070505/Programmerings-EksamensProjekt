@@ -24,7 +24,7 @@ class Items implements Builder{
    return this;
   }
 
-Items EssenseReaver() {
+Items EssenceReaver() {
    ad += 60;
    crit += 20;
    return this;
@@ -37,7 +37,7 @@ Items GuinsoosRageblade() {
    return this;
   }
 
-Items ImmortalSheildbow() {
+Items ImmortalShieldbow() {
    ad += 50;
    crit += 20;
    return this;
@@ -56,7 +56,7 @@ Items KrakenSlayer() {
    return this;
   }
 
-Items LordDominiksRegard() {
+Items LordDominiksRegards() {
    ad += 40;
    crit += 20;
    return this;
@@ -100,7 +100,7 @@ Items RapidFirecannon() {
    return this;
   }
 
-Items Runaanshurricane() {
+Items RunaansHurricane() {
    ad += 40;
    crit += 20;
    return this;
@@ -120,19 +120,13 @@ Items Stormrazor() {
    return this;
   }
 
-Items Runaanshurricane() {
-   ad += 40;
-   as += 30;
-   return this;
-  }
-
 Items Terminus() {
    ad += 40;
    crit += 20;
    return this;
   }
 
-Items TheCollecter() {
+Items TheCollector() {
    ad += 55;
    crit += 20;
    return this;
@@ -152,7 +146,7 @@ Items WitsEnd() {
 
 
 ChampionBuild build(){
-  return ad, ap, as, crit, itemList;
+  return itemList;
 }
 
 }
