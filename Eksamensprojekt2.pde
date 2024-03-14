@@ -5,7 +5,7 @@ ButtonCircle udregnDPS;
 ButtonCircle borg;
 ButtonCircle bloodThirster;
 ButtonCircle essenceReaver;
-ButtonCircle guinsoosRageblade:
+ButtonCircle guinsoosRageblade;
 ButtonCircle immortalShieldbow;
 ButtonCircle infinityEdge;
 ButtonCircle krakenSlayer;
@@ -24,13 +24,14 @@ ButtonCircle collecter;
 ButtonCircle trinity;
 ButtonCircle witsEnd;
 
-  Karakter Vayne;
+Karakter Vayne;
 Karakter Ashe;
 Karakter Jhin;
 
 int champCounter;
 int itemsCounter;
 
+ Items buildet = new Items();
 
 void setup() {
   size(1600, 800);
@@ -83,7 +84,7 @@ void draw() {
   jhin.tegnKnap();
   udregnDPS.tegnKnap();
   borg.tegnKnap();
-  bloodThrister.tegnKnap();
+  bloodThirster.tegnKnap();
   essenceReaver.tegnKnap();
   guinsoosRageblade.tegnKnap();
   immortalShieldbow.tegnKnap();
@@ -92,15 +93,12 @@ void draw() {
 
 void mouseReleased() {
   if (vayne.overCircle() && champCounter == 0) {
-    Items buildet = new Items();
     champCounter += 1;
   }
   if (ashe.overCircle() && champCounter == 0) {
-    Items buildet = new Items();
     champCounter += 1;
   }
   if (jhin.overCircle() && champCounter == 0) {
-    Items buildet = new Items();
     champCounter += 1;
   }
 
@@ -109,8 +107,8 @@ void mouseReleased() {
     itemsCounter += 1;
   }
 
-  if (bloodThrister.overCircle() && itemsCounter <= 5) {
-    buildet.BloodThrister();
+  if (bloodThirster.overCircle() && itemsCounter <= 5) {
+    buildet.BloodThirster();
     itemsCounter += 1;
   }
 
@@ -135,10 +133,11 @@ void mouseReleased() {
   }
 
   if (udregnDPS.overCircle()) {
-    //nyPizzaHvid = new BygPizzaHvid().setNavn("HCØblanco").setFyld("bacon").setSize(75).setTid(19).build();
+  Calculate();
   }
 
   if (itemsCounter == 6) {
     buildet.build();
+    println("works");
   }
 }

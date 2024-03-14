@@ -1,6 +1,7 @@
+
 Combo combo;
-int posistion = 100;
-void draw(){ //erstat setup med funktion der sker når man vil finde dps 
+int position = 100;
+void Calculate(){ //erstat setup med funktion der sker når man vil finde dps 
 //BaseDamage=(ScalingAD*AD)+(ScalingAP*AP)
 //AverageDamage=BaseDamage+((1%CritChance)*(CritDamage-1)*BaseDamage
 combo = new Combo("combo"); //composite objekt består af leaf objekter
@@ -13,7 +14,7 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    
    
    int totalDmg = combo.getDmg();  // kalder Dmg på hele træet
-   int totalTime = combo.getTime(); // kalder Time på hele træet
+   float totalTime = combo.getTime(); // kalder Time på hele træet
    println(totalDmg);
    fill(50);
    text(totalDmg + "is the total damage.", 100, position + 50);

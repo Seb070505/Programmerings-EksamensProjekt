@@ -3,6 +3,23 @@ class Attack implements Component{
   int Dmg;
   float Time;
   
+  
+ int getAD(){
+   return Dmg;
+ }
+ 
+ int getAP(){
+   return Dmg;
+ }
+ 
+ int getCrit(){
+   return Dmg;
+ }
+ 
+ int getAttackSpeed(){
+   return Dmg;
+ }
+  
   Attack(String navn){
     this.navn = navn;
   }

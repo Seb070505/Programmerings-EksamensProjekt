@@ -1,11 +1,12 @@
 class Karakter{
   
-  int baseAttackSpeed;
-  int ad, ap;
+  float baseAttackSpeed;
+  float ad; 
+  int ap;
   int crit;
   
   
-  Karakter(int baseAttackSpeed, int ad, int ap, int crit){
+  Karakter(float baseAttackSpeed, float ad, int ap, int crit){
     this.baseAttackSpeed = baseAttackSpeed;
     this.ad = ad;
     this.ap = ap;

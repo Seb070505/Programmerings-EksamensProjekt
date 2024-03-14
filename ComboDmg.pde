@@ -4,15 +4,26 @@ class Combo implements Component {
   int Dmg;
   float Time;
   //item stats
- int getAD();
- int getAP();
- int getCrit();
- int getAttackSpeed();
+ int getAD(){
+   return Dmg;
+ }
+ 
+ int getAP(){
+   return Dmg;
+ }
+ 
+ int getCrit(){
+   return Dmg;
+ }
+ 
+ int getAttackSpeed(){
+   return Dmg;
+ }
   
   Combo(String navn){
     this.navn = navn;
   }
-  void tilfoejCombo(Component newattacks){
+  void tilfoejAttack(Component newattacks){
     attacks.add(newattacks);
   }
  // void setHoldbarhed(){
