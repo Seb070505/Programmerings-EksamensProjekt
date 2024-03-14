@@ -75,34 +75,44 @@ void draw(){
     
    if(borg.overCircle() && itemsCounter <= 5){
     buildet.BladeOfTheRuinedKing();
+    itemsCounter += 1;
     }
     
    if(bloodThrister.overCircle() && itemsCounter <= 5){
     buildet.BloodThrister();
+    itemsCounter += 1;
     }
    
    if(essenceReaver.overCircle() && itemsCounter <= 5){
     buildet.EssenceReaver();
+    itemsCounter += 1;
     }
    
    if(guinsoosRageblade.overCircle() && itemsCounter <= 5){
     buildet.GuinsoosRageblade();
+    itemsCounter += 1;
     }   
    
    if(immortalShieldbow.overCircle() && itemsCounter <= 5){
-    buildet.ImmortalShieldbow
+    buildet.ImmortalShieldbow();
+    itemsCounter += 1;
     }
    
    if(infinityEdge.overCircle() && itemsCounter <= 5){
     buildet.InfinityEdge();
+    itemsCounter += 1;
     }
     
     if (udregnDPS.overCircle()){
      //nyPizzaHvid = new BygPizzaHvid().setNavn("HCØblanco").setFyld("bacon").setSize(75).setTid(19).build();
     }
-   }
-   
-   if (itemsCounter == 6){
+    
+    if (itemsCounter == 6){
     buildet.build(); 
    }
+    
+   }
+   
+   
+   
    
