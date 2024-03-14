@@ -3,6 +3,11 @@ class Combo implements Component {
   String navn;
   int Dmg;
   float Time;
+  //item stats
+ int getAD();
+ int getAP();
+ int getCrit();
+ int getAttackSpeed();
   
   Combo(String navn){
     this.navn = navn;
