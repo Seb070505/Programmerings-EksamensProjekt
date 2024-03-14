@@ -1,4 +1,4 @@
 interface Component {
-  int getTime();
+  float getTime();
   int getDmg();
 }

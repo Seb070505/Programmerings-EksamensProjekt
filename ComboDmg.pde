@@ -1,7 +1,8 @@
 class Combo implements Component {
   ArrayList<Component> attacks = new ArrayList<Component>(); 
   String navn;
-  int Dmg, Time;
+  int Dmg;
+  float Time;
   
   Combo(String navn){
     this.navn = navn;
@@ -14,8 +15,8 @@ class Combo implements Component {
   String getNavn(){
     return navn;
   }
-  int getTime(){
-    int totalTime = 0;
+  float getTime(){
+    float totalTime = 0;
     for (Component c : attacks) {
       totalTime += c.getTime();
       }
