@@ -3,6 +3,11 @@ class Combo implements Component {
   String navn;
   int Dmg;
   float Time;
+  //item stats
+ int getAD();
+ int getAP();
+ int getCrit();
+ int getAttackSpeed();
   
   Combo(String navn){
     this.navn = navn;
@@ -22,7 +27,7 @@ class Combo implements Component {
       }
     return totalTime;
   }
-  int get(){
+  int getDmg(){
     int totalDmg = 0;
     for (Component c : attacks) {
       totalDmg += c.getDmg();
