@@ -1,5 +1,5 @@
 class ChampionBuild{
   
   
-  ArrayList<String> itemList = new ArrayList<String>();
+  ArrayList<String> itemlist = new ArrayList<String>();
 }
