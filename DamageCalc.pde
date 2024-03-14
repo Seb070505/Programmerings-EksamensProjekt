@@ -1,6 +1,6 @@
-//Combo combo; why not needed???
-
-void setup(){ //erstat setup med funktion der sker når man vil finde dps 
+Combo combo;
+int posistion = 100;
+void draw(){ //erstat setup med funktion der sker når man vil finde dps 
 //BaseDamage=(ScalingAD*AD)+(ScalingAP*AP)
 //AverageDamage=BaseDamage+((1%CritChance)*(CritDamage-1)*BaseDamage
 combo = new Combo("combo"); //composite objekt består af leaf objekter

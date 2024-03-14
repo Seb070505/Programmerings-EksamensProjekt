@@ -22,7 +22,7 @@ class Combo implements Component {
       }
     return totalTime;
   }
-  int get(){
+  int getDmg(){
     int totalDmg = 0;
     for (Component c : attacks) {
       totalDmg += c.getDmg();
