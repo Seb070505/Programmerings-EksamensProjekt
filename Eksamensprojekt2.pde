@@ -105,31 +105,37 @@ void mouseReleased() {
   if (borg.overCircle() && itemsCounter <= 5) {
     buildet.BladeOfTheRuinedKing();
     itemsCounter += 1;
+    println(itemsCounter);
   }
 
   if (bloodThirster.overCircle() && itemsCounter <= 5) {
     buildet.BloodThirster();
     itemsCounter += 1;
+    println(itemsCounter);
   }
 
   if (essenceReaver.overCircle() && itemsCounter <= 5) {
     buildet.EssenceReaver();
     itemsCounter += 1;
+    println(itemsCounter);
   }
 
   if (guinsoosRageblade.overCircle() && itemsCounter <= 5) {
     buildet.GuinsoosRageblade();
     itemsCounter += 1;
+    println(itemsCounter);
   }
 
   if (immortalShieldbow.overCircle() && itemsCounter <= 5) {
     buildet.ImmortalShieldbow();
     itemsCounter += 1;
+    println(itemsCounter);
   }
 
   if (infinityEdge.overCircle() && itemsCounter <= 5) {
     buildet.InfinityEdge();
     itemsCounter += 1;
+    println(itemsCounter);
   }
 
   if (udregnDPS.overCircle()) {
