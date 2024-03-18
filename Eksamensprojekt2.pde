@@ -24,9 +24,6 @@ ButtonCircle collector;
 ButtonCircle trinity;
 ButtonCircle witsEnd;
 
-Karakter Vayne;
-Karakter Ashe;
-Karakter Jhin;
 
 int champCounter;
 int itemsCounter;
@@ -67,12 +64,6 @@ void setup() {
   trinity = new ButtonCircle(600, 300, 50, "TrinityForce.png");
   witsEnd = new ButtonCircle(650, 300, 50, "WitsEnd.png");
 
-
-
-
-  Vayne = new Karakter(1.027138, 99.95, 0, 0);
-  Ashe = new Karakter(1.0304938, 109.15, 0, 0);
-  Jhin = new Karakter(0.92, 132.88, 0, 0);
 }
 
 
@@ -114,12 +105,15 @@ void draw() {
 
 void mouseReleased() {
   if (vayne.overCircle() && champCounter == 0) {
+    buildet.Vayne(1.027138, 99.95, 0, 0);
     champCounter += 1;
   }
   if (ashe.overCircle() && champCounter == 0) {
+    buildet.Ashe(1.0304938, 109.15, 0, 0);
     champCounter += 1;
   }
   if (jhin.overCircle() && champCounter == 0) {
+    buildet.Jhin(0.92, 132.88, 0, 0);
     champCounter += 1;
   }
 
