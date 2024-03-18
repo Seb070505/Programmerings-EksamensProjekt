@@ -20,7 +20,7 @@ ButtonCircle runaans;
 ButtonCircle shiv;
 ButtonCircle stormrazor;
 ButtonCircle terminus;
-ButtonCircle collecter;
+ButtonCircle collector;
 ButtonCircle trinity;
 ButtonCircle witsEnd;
 
@@ -63,7 +63,7 @@ void setup() {
   shiv = new ButtonCircle(200, 300, 50, "StattikShiv.png");
   stormrazor = new ButtonCircle(250, 300, 50, "Stormrazor.png");
   terminus = new ButtonCircle(400, 300, 50, "Terminus.png");
-  collecter = new ButtonCircle(450, 300, 50, "TheCollecter.png");
+  collector = new ButtonCircle(450, 300, 50, "TheCollecter.png");
   trinity = new ButtonCircle(600, 300, 50, "TrinityForce.png");
   witsEnd = new ButtonCircle(650, 300, 50, "WitsEnd.png");
 
@@ -89,6 +89,12 @@ void draw() {
   guinsoosRageblade.tegnKnap();
   immortalShieldbow.tegnKnap();
   infinityEdge.tegnKnap();
+  
+  if (itemsCounter == 6) {
+    buildet.build();
+    println("works");
+  }
+  
 }
 
 void mouseReleased() {
@@ -138,12 +144,101 @@ void mouseReleased() {
     println(itemsCounter);
   }
 
+
+
+if (krakenSlayer.overCircle() && itemsCounter <= 5) {
+    buildet.KrakenSlayer();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (lordDoms.overCircle() && itemsCounter <= 5) {
+    buildet.LordDominiksRegards();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (mercurial.overCircle() && itemsCounter <= 5) {
+    buildet.MercurialScimitar();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (mortal.overCircle() && itemsCounter <= 5) {
+    buildet.MortalReminder();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+  
+if (nashors.overCircle() && itemsCounter <= 5) {
+    buildet.NashorsTooth();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+  
+if (navori.overCircle() && itemsCounter <= 5) {
+    buildet.NavoriQuickblades();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (dancers.overCircle() && itemsCounter <= 5) {
+    buildet.PhantomDancer();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (fireCannon.overCircle() && itemsCounter <= 5) {
+    buildet.RapidFirecannon();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (runaans.overCircle() && itemsCounter <= 5) {
+    buildet.RunaansHurricane();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (shiv.overCircle() && itemsCounter <= 5) {
+    buildet.StatikkShiv();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
+if (stormrazor.overCircle() && itemsCounter <= 5) {
+    buildet.Stormrazor();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+  
+if (terminus.overCircle() && itemsCounter <= 5) {
+    buildet.Terminus();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+  
+if (collector.overCircle() && itemsCounter <= 5) {
+    buildet.TheCollector();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+  
+if (trinity.overCircle() && itemsCounter <= 5) {
+    buildet.TrinityForce();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+  
+if (witsEnd.overCircle() && itemsCounter <= 5) {
+    buildet.WitsEnd();
+    itemsCounter += 1;
+    println(itemsCounter);
+  }
+
   if (udregnDPS.overCircle()) {
   Calculate();
   }
 
-  if (itemsCounter == 6) {
-    buildet.build();
-    println("works");
-  }
+  
 }

@@ -16,8 +16,8 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    int totalDmg = combo.getDmg();  // kalder Dmg på hele træet
    float totalTime = combo.getTime(); // kalder Time på hele træet
    println(totalDmg);
-   fill(50);
-   text(totalDmg + "is the total damage.", 100, position + 50);
-   text(totalTime + "is the total time.", 100, position + 85);
+   fill(255,0,255);
+   text(totalDmg + " is the total damage.", 100, position + 50);
+   text(totalTime + " is the total time.", 100, position + 85);
    noLoop();
 }

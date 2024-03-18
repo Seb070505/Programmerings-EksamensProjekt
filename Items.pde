@@ -62,7 +62,7 @@ Items LordDominiksRegards() {
    return this;
   }
 
-Items MercurialScrimitar() {
+Items MercurialScimitar() {
    ad += 40;
    crit += 20;
    return this;
