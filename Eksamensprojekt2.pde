@@ -27,6 +27,7 @@ ButtonCircle witsEnd;
 
 int champCounter;
 int itemsCounter;
+boolean stop = false;
 
  Items buildet = new Items();
 
@@ -96,8 +97,9 @@ void draw() {
   trinity.tegnKnap();
   witsEnd.tegnKnap();
   
-  if (itemsCounter == 6) {
+  if (itemsCounter == 6 && stop == false) {
     buildet.build();
+    stop = true;
     println("works");
   }
   
