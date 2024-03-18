@@ -109,37 +109,37 @@ void mouseReleased() {
   }
 
   if (borg.overCircle() && itemsCounter <= 5) {
-    buildet.BladeOfTheRuinedKing();
+    buildet.BladeOfTheRuinedKing(40,0,25,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
   if (bloodThirster.overCircle() && itemsCounter <= 5) {
-    buildet.BloodThirster();
+    buildet.BloodThirster(50,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
   if (essenceReaver.overCircle() && itemsCounter <= 5) {
-    buildet.EssenceReaver();
+    buildet.EssenceReaver(60,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
   if (guinsoosRageblade.overCircle() && itemsCounter <= 5) {
-    buildet.GuinsoosRageblade();
+    buildet.GuinsoosRageblade(35,35,25,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
   if (immortalShieldbow.overCircle() && itemsCounter <= 5) {
-    buildet.ImmortalShieldbow();
+    buildet.ImmortalShieldbow(50,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
   if (infinityEdge.overCircle() && itemsCounter <= 5) {
-    buildet.InfinityEdge();
+    buildet.InfinityEdge(65,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
@@ -147,91 +147,91 @@ void mouseReleased() {
 
 
 if (krakenSlayer.overCircle() && itemsCounter <= 5) {
-    buildet.KrakenSlayer();
+    buildet.KrakenSlayer(40,0,35,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (lordDoms.overCircle() && itemsCounter <= 5) {
-    buildet.LordDominiksRegards();
+    buildet.LordDominiksRegards(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (mercurial.overCircle() && itemsCounter <= 5) {
-    buildet.MercurialScimitar();
+    buildet.MercurialScimitar(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (mortal.overCircle() && itemsCounter <= 5) {
-    buildet.MortalReminder();
+    buildet.MortalReminder(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
 if (nashors.overCircle() && itemsCounter <= 5) {
-    buildet.NashorsTooth();
+    buildet.NashorsTooth(0,90,50,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
 if (navori.overCircle() && itemsCounter <= 5) {
-    buildet.NavoriQuickblades();
+    buildet.NavoriQuickblades(60,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (dancers.overCircle() && itemsCounter <= 5) {
-    buildet.PhantomDancer();
+    buildet.PhantomDancer(20,0,30,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (fireCannon.overCircle() && itemsCounter <= 5) {
-    buildet.RapidFirecannon();
+    buildet.RapidFirecannon(30,0,20,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (runaans.overCircle() && itemsCounter <= 5) {
-    buildet.RunaansHurricane();
+    buildet.RunaansHurricane(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (shiv.overCircle() && itemsCounter <= 5) {
-    buildet.StatikkShiv();
+    buildet.StatikkShiv(50,0,30,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
 if (stormrazor.overCircle() && itemsCounter <= 5) {
-    buildet.Stormrazor();
+    buildet.Stormrazor(60,0,15,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
 if (terminus.overCircle() && itemsCounter <= 5) {
-    buildet.Terminus();
+    buildet.Terminus(40,0,30,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
 if (collector.overCircle() && itemsCounter <= 5) {
-    buildet.TheCollector();
+    buildet.TheCollector(55,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
 if (trinity.overCircle() && itemsCounter <= 5) {
-    buildet.TrinityForce();
+    buildet.TrinityForce(45,0,33,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
 if (witsEnd.overCircle() && itemsCounter <= 5) {
-    buildet.WitsEnd();
+    buildet.WitsEnd(0,0,55,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
