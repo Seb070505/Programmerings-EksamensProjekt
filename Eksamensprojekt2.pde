@@ -89,6 +89,21 @@ void draw() {
   guinsoosRageblade.tegnKnap();
   immortalShieldbow.tegnKnap();
   infinityEdge.tegnKnap();
+  krakenSlayer.tegnKnap();
+  lordDoms.tegnKnap();
+  mercurial.tegnKnap();
+  mortal.tegnKnap();
+  nashors.tegnKnap();
+  navori.tegnKnap();
+  dancers.tegnKnap();
+  fireCannon.tegnKnap();
+  runaans.tegnKnap();
+  shiv.tegnKnap();
+  stormrazor.tegnKnap();
+  terminus.tegnKnap();
+  collector.tegnKnap();
+  trinity.tegnKnap();
+  witsEnd.tegnKnap();
   
   if (itemsCounter == 6) {
     buildet.build();
