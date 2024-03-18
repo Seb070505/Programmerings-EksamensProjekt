@@ -12,138 +12,197 @@ class Items implements Builder{
    itemList = new ChampionBuild();
   }
 
-  Items BladeOfTheRuinedKing() {
-    ad += 40;
-    as += 25;
+  Items BladeOfTheRuinedKing(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
     return this;
   }
 
-  Items BloodThirster() {
-   ad += 95;
-   crit += 20;
-   return this;
+  Items BloodThirster(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items EssenceReaver() {
-   ad += 60;
-   crit += 20;
-   return this;
+Items EssenceReaver(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items GuinsoosRageblade() {
-   ad += 35;
-   ap += 35;
-   as += 25;
-   return this;
+Items GuinsoosRageblade(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items ImmortalShieldbow() {
-   ad += 50;
-   crit += 20;
-   return this;
+Items ImmortalShieldbow(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items InfinityEdge() {
-   ad += 65;
-   crit += 20;
-   return this;
+Items InfinityEdge(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items KrakenSlayer() {
-   ad += 40;
-   ap += 35;
-   crit += 20;
-   return this;
+Items KrakenSlayer(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items LordDominiksRegards() {
-   ad += 40;
-   crit += 20;
-   return this;
+Items LordDominiksRegards(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items MercurialScimitar() {
-   ad += 40;
-   crit += 20;
-   return this;
+Items MercurialScimitar(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items MortalReminder() {
-   ad += 40;
-   crit += 20;
-   return this;
+Items MortalReminder(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items NashorsTooth() {
-   ap += 90;
-   as += 50;
-   return this;
+Items NashorsTooth(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items NavoriQuickblades() {
-   ad += 60;
-   crit += 20;
-   return this;
+Items NavoriQuickblades(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items PhantomDancer() {
-   ad += 20;
-   crit += 20;
-   as += 30;
-   return this;
+Items PhantomDancer(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items RapidFirecannon() {
-   ad += 30;
-   as += 20;
-   crit += 20;
-   return this;
+Items RapidFirecannon(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items RunaansHurricane() {
-   ad += 40;
-   crit += 20;
-   return this;
+Items RunaansHurricane(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items StatikkShiv() {
-   ad += 50;
-   as += 30;
-   crit += 20;
-   return this;
+Items StatikkShiv(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items Stormrazor() {
-   ad += 60;
-   as += 15;
-   crit += 20;
-   return this;
+Items Stormrazor(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items Terminus() {
-   ad += 40;
-   crit += 20;
-   return this;
+Items Terminus(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items TheCollector() {
-   ad += 55;
-   crit += 20;
-   return this;
+Items TheCollector(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items TrinityForce() {
-   ad += 45;
-   as += 33;
-   return this;
+Items TrinityForce(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
-Items WitsEnd() {
-   as += 55;
-   return this;
+Items WitsEnd(float ad, int ap, int as, int crit) {
+    itemList.ad = ad;
+    itemList.ap = ap;
+    itemList.as = as;
+    itemList.crit = crit;
+    return this;
   }
 
+Items Vayne(float baseAttackSpeed, float ad, int ap, int crit){
+ itemList.baseAs = baseAttackSpeed;
+ itemList.ad = ad;
+ itemList.ap = ap;
+ itemList.crit = crit;
+ return this;
+}
 
+Items Ashe(float baseAttackSpeed, float ad, int ap, int crit){
+ itemList.baseAs = baseAttackSpeed;
+ itemList.ad = ad;
+ itemList.ap = ap;
+ itemList.crit = crit;
+ return this;
+}
+
+Items Jhin(float baseAttackSpeed, float ad, int ap, int crit){
+ itemList.baseAs = baseAttackSpeed;
+ itemList.ad = ad;
+ itemList.ap = ap;
+ itemList.crit = crit;
+ return this;
+}
 
 ChampionBuild build(){
   return itemList;
