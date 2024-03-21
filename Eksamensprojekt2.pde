@@ -73,6 +73,7 @@ void setup() {
 
 void draw() {
 
+  
   vayne.tegnKnap();
   ashe.tegnKnap();
   jhin.tegnKnap();
@@ -105,7 +106,10 @@ void draw() {
     println("works");
     println("ad er " + champion.ad);
     println("ap er " + champion.ap);
-    println("attack speed er " + champion.as);
+    
+    champion.totalAs = champion.baseAs + champion.baseAs * champion.as/100;
+    
+    println("attack speed er " + champion.totalAs);
     
     if (champion.crit >= 100){
      champion.crit = 100; 
@@ -119,14 +123,17 @@ void mouseReleased() {
   if (vayne.overCircle() && champCounter == 0) {
     buildet.Vayne(1.027138, 99.95, 0, 0);
     champCounter += 1;
+    println("Vayne er valgt");
   }
   if (ashe.overCircle() && champCounter == 0) {
     buildet.Ashe(1.0304938, 109.15, 0, 0);
     champCounter += 1;
+    println("Ashe er valgt");
   }
   if (jhin.overCircle() && champCounter == 0) {
     buildet.Jhin(0.92, 132.88, 0, 0);
     champCounter += 1;
+    println("Jhin er valgt");
   }
 
   if (borg.overCircle() && itemsCounter <= 5) {
