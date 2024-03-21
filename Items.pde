@@ -1,9 +1,5 @@
 class Items implements Builder{
 
-  int ad;
-  int ap;
-  int as;
-  int crit;
   
   ChampionBuild itemList;
 

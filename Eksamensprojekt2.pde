@@ -104,6 +104,13 @@ void draw() {
     stop = true;
     println("works");
     println("ad er " + champion.ad);
+    println("ap er " + champion.ap);
+    println("attack speed er " + champion.as);
+    
+    if (champion.crit >= 100){
+     champion.crit = 100; 
+     }
+    println("crit er " + champion.crit);
   }
   
 }

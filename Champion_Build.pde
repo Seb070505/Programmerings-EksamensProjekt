@@ -6,5 +6,6 @@ class ChampionBuild{
   int as;
   int crit;
   
+  
   ArrayList<String> itemlist = new ArrayList<String>();
 }
