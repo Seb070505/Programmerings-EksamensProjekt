@@ -24,12 +24,14 @@ ButtonCircle collector;
 ButtonCircle trinity;
 ButtonCircle witsEnd;
 
+ChampionBuild champion;
 
 int champCounter;
 int itemsCounter;
 boolean stop = false;
 
  Items buildet = new Items();
+
 
 void setup() {
   size(1600, 800);
@@ -98,9 +100,10 @@ void draw() {
   witsEnd.tegnKnap();
   
   if (itemsCounter == 6 && stop == false) {
-    buildet.build();
+    champion = buildet.build();
     stop = true;
     println("works");
+    println("ad er " + champion.ad);
   }
   
 }
