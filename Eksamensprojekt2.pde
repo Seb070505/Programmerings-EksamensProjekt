@@ -45,27 +45,27 @@ void setup() {
   udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png");
 
 
-  borg = new ButtonCircle(50, 200, 50, "BladeOfTheRuinedKing.png");
-  bloodThirster = new ButtonCircle(200, 200, 50, "BloodThirster.png");
-  essenceReaver = new ButtonCircle(350, 200, 50, "EssenseReaver.png");
-  guinsoosRageblade = new ButtonCircle(500, 200, 50, "GuinsoosRageblade.png");
-  immortalShieldbow = new ButtonCircle(650, 200, 50, "ImmortalShieldbow.png");
-  infinityEdge = new ButtonCircle(800, 200, 50, "InfinityEdge.png");
-  krakenSlayer = new ButtonCircle(850, 200, 50, "KrakenSlayer.png");
-  lordDoms = new ButtonCircle(1000, 200, 50, "LordDominiksRegards.png");
-  mercurial = new ButtonCircle(1050, 200, 50, "MercurialScimitar.png");
-  mortal = new ButtonCircle(1200, 200, 50, "MortalReminder.png");
-  nashors = new ButtonCircle(1250, 200, 50, "NashorsTooth.png");
-  navori = new ButtonCircle(1400, 200, 50, "NavoriQuickblades.png");
-  dancers = new ButtonCircle(1450, 200, 50, "PhantomDancer.png");
-  fireCannon = new ButtonCircle(1600, 200, 50, "RapidFirecannon.png");
-  runaans = new ButtonCircle(50, 300, 50, "RunaansHurricane.png");
-  shiv = new ButtonCircle(200, 300, 50, "StattikShiv.png");
-  stormrazor = new ButtonCircle(250, 300, 50, "Stormrazor.png");
-  terminus = new ButtonCircle(400, 300, 50, "Terminus.png");
-  collector = new ButtonCircle(450, 300, 50, "TheCollecter.png");
-  trinity = new ButtonCircle(600, 300, 50, "TrinityForce.png");
-  witsEnd = new ButtonCircle(650, 300, 50, "WitsEnd.png");
+  borg = new ButtonCircle(50, 300, 100, "BladeOfTheRuinedKing.png");
+  bloodThirster = new ButtonCircle(200, 300, 100, "BloodThirster.png");
+  essenceReaver = new ButtonCircle(350, 300, 100, "EssenseReaver.png");
+  guinsoosRageblade = new ButtonCircle(500, 300, 100, "GuinsoosRageblade.png");
+  immortalShieldbow = new ButtonCircle(650, 300, 100, "ImmortalShieldbow.png");
+  infinityEdge = new ButtonCircle(800, 300, 100, "InfinityEdge.png");
+  krakenSlayer = new ButtonCircle(950, 300, 100, "KrakenSlayer.png");
+  lordDoms = new ButtonCircle(1100, 300, 100, "LordDominiksRegards.png");
+  mercurial = new ButtonCircle(1250, 300, 100, "MercurialScimitar.png");
+  mortal = new ButtonCircle(1400, 300, 100, "MortalReminder.png");
+  nashors = new ButtonCircle(1550, 300, 100, "NashorsTooth.png");
+  navori = new ButtonCircle(1400, 300, 100, "NavoriQuickblades.png");
+  dancers = new ButtonCircle(1400, 425, 100, "PhantomDancer.png");
+  fireCannon = new ButtonCircle(200,425, 100, "RapidFirecannon.png");
+  runaans = new ButtonCircle(350, 425, 100, "RunaansHurricane.png");
+  shiv = new ButtonCircle(500, 425, 100, "StattikShiv.png");
+  stormrazor = new ButtonCircle(650, 425, 100, "Stormrazor.png");
+  terminus = new ButtonCircle(800, 425, 100, "Terminus.png");
+  collector = new ButtonCircle(950, 425, 100, "TheCollecter.png");
+  trinity = new ButtonCircle(1100, 425, 100, "TrinityForce.png");
+  witsEnd = new ButtonCircle(1250, 425, 100, "WitsEnd.png");
 
 }
 
