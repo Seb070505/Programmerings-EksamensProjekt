@@ -2,7 +2,7 @@ ButtonCircle vayne;
 ButtonCircle ashe;
 ButtonCircle jhin;
 ButtonCircle udregnDPS;
-ButtonCircle borg;
+ButtonCircle bork;
 ButtonCircle bloodThirster;
 ButtonCircle essenceReaver;
 ButtonCircle guinsoosRageblade;
@@ -30,7 +30,7 @@ int champCounter;
 int itemsCounter;
 boolean stop = false;
 
-boolean borg1 = false;
+boolean bork1 = false;
 boolean bloodThirster1 = false;
 boolean essenceReaver1 = false;
 boolean guinsoosRageblade1 = false;
@@ -68,7 +68,7 @@ void setup() {
   udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png");
 
 
-  borg = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png");
+  bork = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png");
   bloodThirster = new ButtonCircle(350, 425, 100, "BloodThirster.png");
   essenceReaver = new ButtonCircle(950, 550, 100, "EssenseReaver.png");
   guinsoosRageblade = new ButtonCircle(500, 300, 100, "GuinsoosRageblade.png");
@@ -101,7 +101,7 @@ void draw() {
   ashe.tegnKnap();
   jhin.tegnKnap();
   udregnDPS.tegnKnap();
-  borg.tegnKnap();
+  bork.tegnKnap();
   bloodThirster.tegnKnap();
   essenceReaver.tegnKnap();
   guinsoosRageblade.tegnKnap();
@@ -159,10 +159,10 @@ void mouseReleased() {
     println("Jhin er valgt");
   }
 
-  if (borg.overCircle() && itemsCounter <= 5 && champCounter == 1 && borg1 == false) {
+  if (bork.overCircle() && itemsCounter <= 5 && champCounter == 1 && bork1 == false) {
     buildet.BladeOfTheRuinedKing(40,0,25,0);
     itemsCounter += 1;
-    borg1 = true;
+    bork1 = true;
     println(itemsCounter);
   }
 
