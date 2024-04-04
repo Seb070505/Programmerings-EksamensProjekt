@@ -2,7 +2,7 @@ ButtonCircle vayne;
 ButtonCircle ashe;
 ButtonCircle jhin;
 ButtonCircle udregnDPS;
-ButtonCircle bork;
+ButtonCircle borg;
 ButtonCircle bloodThirster;
 ButtonCircle essenceReaver;
 ButtonCircle guinsoosRageblade;
@@ -30,35 +30,12 @@ int champCounter;
 int itemsCounter;
 boolean stop = false;
 
-boolean bork1 = false;
-boolean bloodThirster1 = false;
-boolean essenceReaver1 = false;
-boolean guinsoosRageblade1 = false;
-boolean immortalShieldbow1 = false;
-boolean krakenSlayer1 = false;
-boolean lordDoms1 = false;
-boolean infinityEdge1 = false;
-boolean mercurial1 = false;
-boolean mortal1 = false;
-boolean nashors1 = false;
-boolean navori1 = false;
-boolean dancers1 = false;
-boolean fireCannon1 = false;
-boolean runaans1 = false;
-boolean shiv1 = false;
-boolean stormrazor1 = false;
-boolean terminus1 = false;
-boolean collector1 = false;
-boolean trinity1 = false;
-boolean witsEnd1 = false;
-
-
  Items buildet = new Items();
 
 
 void setup() {
   size(1600, 800);
-  background(255);
+  background(0);
 
 
 
@@ -68,27 +45,27 @@ void setup() {
   udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png");
 
 
-  bork = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png");
-  bloodThirster = new ButtonCircle(350, 425, 100, "BloodThirster.png");
-  essenceReaver = new ButtonCircle(950, 550, 100, "EssenseReaver.png");
+  borg = new ButtonCircle(50, 300, 100, "BladeOfTheRuinedKing.png");
+  bloodThirster = new ButtonCircle(200, 300, 100, "BloodThirster.png");
+  essenceReaver = new ButtonCircle(350, 300, 100, "EssenseReaver.png");
   guinsoosRageblade = new ButtonCircle(500, 300, 100, "GuinsoosRageblade.png");
   immortalShieldbow = new ButtonCircle(650, 300, 100, "ImmortalShieldbow.png");
   infinityEdge = new ButtonCircle(800, 300, 100, "InfinityEdge.png");
   krakenSlayer = new ButtonCircle(950, 300, 100, "KrakenSlayer.png");
   lordDoms = new ButtonCircle(1100, 300, 100, "LordDominiksRegards.png");
-  mercurial = new ButtonCircle(650, 550, 100, "MercurialScimitar.png");
-  mortal = new ButtonCircle(350, 300, 100, "MortalReminder.png");
-  nashors = new ButtonCircle(1100, 550, 100, "NashorsTooth.png");
-  navori = new ButtonCircle(500, 550, 100, "NavoriQuickblades.png");
-  dancers = new ButtonCircle(1250, 425, 100, "PhantomDancer.png");
-  fireCannon = new ButtonCircle(1250,550, 100, "RapidFirecannon.png");
-  runaans = new ButtonCircle(350, 550, 100, "RunaansHurricane.png");
+  mercurial = new ButtonCircle(1250, 300, 100, "MercurialScimitar.png");
+  mortal = new ButtonCircle(1400, 300, 100, "MortalReminder.png");
+  nashors = new ButtonCircle(1550, 300, 100, "NashorsTooth.png");
+  navori = new ButtonCircle(1400, 300, 100, "NavoriQuickblades.png");
+  dancers = new ButtonCircle(1400, 425, 100, "PhantomDancer.png");
+  fireCannon = new ButtonCircle(200,425, 100, "RapidFirecannon.png");
+  runaans = new ButtonCircle(350, 425, 100, "RunaansHurricane.png");
   shiv = new ButtonCircle(500, 425, 100, "StattikShiv.png");
   stormrazor = new ButtonCircle(650, 425, 100, "Stormrazor.png");
   terminus = new ButtonCircle(800, 425, 100, "Terminus.png");
   collector = new ButtonCircle(950, 425, 100, "TheCollecter.png");
   trinity = new ButtonCircle(1100, 425, 100, "TrinityForce.png");
-  witsEnd = new ButtonCircle(1250, 300, 100, "WitsEnd.png");
+  witsEnd = new ButtonCircle(1250, 425, 100, "WitsEnd.png");
 
 }
 
@@ -101,7 +78,7 @@ void draw() {
   ashe.tegnKnap();
   jhin.tegnKnap();
   udregnDPS.tegnKnap();
-  bork.tegnKnap();
+  borg.tegnKnap();
   bloodThirster.tegnKnap();
   essenceReaver.tegnKnap();
   guinsoosRageblade.tegnKnap();
@@ -159,152 +136,131 @@ void mouseReleased() {
     println("Jhin er valgt");
   }
 
-  if (bork.overCircle() && itemsCounter <= 5 && champCounter == 1 && bork1 == false) {
+  if (borg.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.BladeOfTheRuinedKing(40,0,25,0);
     itemsCounter += 1;
-    bork1 = true;
     println(itemsCounter);
   }
 
-  if (bloodThirster.overCircle() && itemsCounter <= 5 && champCounter == 1 && bloodThirster1 == false) {
+  if (bloodThirster.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.BloodThirster(50,0,0,20);
     itemsCounter += 1;
-    bloodThirster1 = true;
     println(itemsCounter);
   }
 
-  if (essenceReaver.overCircle() && itemsCounter <= 5 && champCounter == 1 && essenceReaver1 == false) {
+  if (essenceReaver.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.EssenceReaver(60,0,0,20);
     itemsCounter += 1;
-    essenceReaver1 = true;
     println(itemsCounter);
   }
 
-  if (guinsoosRageblade.overCircle() && itemsCounter <= 5 && champCounter == 1 && guinsoosRageblade1 == false) {
+  if (guinsoosRageblade.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.GuinsoosRageblade(35,35,25,0);
     itemsCounter += 1;
-    guinsoosRageblade1 = true;
     println(itemsCounter);
   }
 
-  if (immortalShieldbow.overCircle() && itemsCounter <= 5 && champCounter == 1 && immortalShieldbow1 == false) {
+  if (immortalShieldbow.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.ImmortalShieldbow(50,0,0,20);
     itemsCounter += 1;
-    immortalShieldbow1 = true;
     println(itemsCounter);
   }
 
-  if (infinityEdge.overCircle() && itemsCounter <= 5 && champCounter == 1 && infinityEdge1 == false) {
+  if (infinityEdge.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.InfinityEdge(65,0,0,20);
     itemsCounter += 1;
-    infinityEdge1 = true;
     println(itemsCounter);
   }
 
 
 
-if (krakenSlayer.overCircle() && itemsCounter <= 5 && champCounter == 1 && krakenSlayer1 == false) {
+if (krakenSlayer.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.KrakenSlayer(40,0,35,20);
     itemsCounter += 1;
-    krakenSlayer1 = true;
     println(itemsCounter);
   }
 
-if (lordDoms.overCircle() && itemsCounter <= 5 && champCounter == 1 && lordDoms1 == false) {
+if (lordDoms.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.LordDominiksRegards(40,0,0,20);
     itemsCounter += 1;
-    lordDoms1 = true;
     println(itemsCounter);
   }
 
-if (mercurial.overCircle() && itemsCounter <= 5 && champCounter == 1 && mercurial1 == false) {
+if (mercurial.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.MercurialScimitar(40,0,0,20);
     itemsCounter += 1;
-    mercurial1 = true;
     println(itemsCounter);
   }
 
-if (mortal.overCircle() && itemsCounter <= 5 && champCounter == 1 && mortal1 == false) {
+if (mortal.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.MortalReminder(40,0,0,20);
     itemsCounter += 1;
-    mortal1 = true;
     println(itemsCounter);
   }
   
-if (nashors.overCircle() && itemsCounter <= 5 && champCounter == 1 && nashors1 == false) {
+if (nashors.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.NashorsTooth(0,90,50,0);
     itemsCounter += 1;
-    nashors1 = true;
     println(itemsCounter);
   }
   
-if (navori.overCircle() && itemsCounter <= 5 && champCounter == 1 && navori1 == false) {
+if (navori.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.NavoriQuickblades(60,0,0,20);
     itemsCounter += 1;
-    navori1 = true;
     println(itemsCounter);
   }
 
-if (dancers.overCircle() && itemsCounter <= 5 && champCounter == 1 && dancers1 == false) {
+if (dancers.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.PhantomDancer(20,0,30,20);
     itemsCounter += 1;
-    dancers1 = true;
     println(itemsCounter);
   }
 
-if (fireCannon.overCircle() && itemsCounter <= 5 && champCounter == 1 && fireCannon1 == false) {
+if (fireCannon.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.RapidFirecannon(30,0,20,20);
     itemsCounter += 1;
-    fireCannon1 = true;
     println(itemsCounter);
   }
 
-if (runaans.overCircle() && itemsCounter <= 5 && champCounter == 1 && runaans1 == false) {
+if (runaans.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.RunaansHurricane(40,0,0,20);
     itemsCounter += 1;
-    runaans1 = true;
     println(itemsCounter);
   }
 
-if (shiv.overCircle() && itemsCounter <= 5 && champCounter == 1 && shiv1 == false) {
+if (shiv.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.StatikkShiv(50,0,30,20);
     itemsCounter += 1;
-    shiv1 = true;
     println(itemsCounter);
   }
 
-if (stormrazor.overCircle() && itemsCounter <= 5 && champCounter == 1 && stormrazor1 == false) {
+if (stormrazor.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.Stormrazor(60,0,15,20);
     itemsCounter += 1;
-    stormrazor1 = true;
     println(itemsCounter);
   }
   
-if (terminus.overCircle() && itemsCounter <= 5 && champCounter == 1 && terminus1 == false) {
+if (terminus.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.Terminus(40,0,30,0);
     itemsCounter += 1;
-    terminus1 = true;
     println(itemsCounter);
   }
   
-if (collector.overCircle() && itemsCounter <= 5 && champCounter == 1 && collector1 == false) {
+if (collector.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.TheCollector(55,0,0,20);
     itemsCounter += 1;
-    collector1 = true;
     println(itemsCounter);
   }
   
-if (trinity.overCircle() && itemsCounter <= 5 && champCounter == 1 && trinity1 == false) {
+if (trinity.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.TrinityForce(45,0,33,0);
     itemsCounter += 1;
-    trinity1 = true;
     println(itemsCounter);
   }
   
-if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 == false) {
+if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.WitsEnd(0,0,55,0);
     itemsCounter += 1;
-    witsEnd1 = true;
     println(itemsCounter);
   }
 
