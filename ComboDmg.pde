@@ -1,24 +1,8 @@
 class Combo implements Component {
   ArrayList<Component> attacks = new ArrayList<Component>(); 
   String navn;
-  int Dmg;
+  float Dmg;
   float Time;
-  //item stats
- int getAD(){
-   return Dmg;
- }
- 
- int getAP(){
-   return Dmg;
- }
- 
- int getCrit(){
-   return Dmg;
- }
- 
- int getAttackSpeed(){
-   return Dmg;
- }
   
   Combo(String navn){
     this.navn = navn;
@@ -38,8 +22,8 @@ class Combo implements Component {
       }
     return totalTime;
   }
-  int getDmg(){
-    int totalDmg = 0;
+  float getDmg(){
+    float totalDmg = 0;
     for (Component c : attacks) {
       totalDmg += c.getDmg();
       }

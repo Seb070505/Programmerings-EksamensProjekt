@@ -12,7 +12,7 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    combo.tilfoejAttack(autoattack); //tilføjer alle de oprettede attacks (forloop for autos baseret på tid?)
    
    Attack vayneQ = new Attack("vayneQ"); 
-   vayneQ.Dmg = 0; // 115% ad + 50% ap
+   vayneQ.Dmg = 1; // 115% ad + 50% ap
    vayneQ.Time = 2; 
    combo.tilfoejAttack(vayneQ);
    
@@ -43,11 +43,60 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    asheR.Time = 60; 
    combo.tilfoejAttack(asheR);
    
+   
+   //item dammage
+    Attack ReaverSpellblade = new Attack("ReaverSpellblade"); 
+   ReaverSpellblade.Dmg = 0; //25% ad
+   combo.tilfoejAttack(ReaverSpellblade);
+   
+   Attack BorkOnhit = new Attack("BorkOnhit"); 
+   BorkOnhit.Dmg = 0; // 9% ad
+   combo.tilfoejAttack(BorkOnhit);
+   
+   Attack KrakenOnhit = new Attack("KrakenOnhit"); 
+   KrakenOnhit.Dmg = 310;
+   combo.tilfoejAttack(KrakenOnhit);
+   
+   Attack LordDomOnhit = new Attack("LordDomOnhit"); 
+   LordDomOnhit.Dmg = 0; // 10% ad
+   combo.tilfoejAttack(LordDomOnhit);
+   
+   Attack NashorsOnhit = new Attack("NashorsOnhit"); 
+   NashorsOnhit.Dmg = 15; // 20% ap
+   combo.tilfoejAttack(NashorsOnhit);
+   
+   Attack RFC = new Attack("RFC"); 
+   RFC.Dmg = 60;
+   RFC.Time = 5;
+   combo.tilfoejAttack(RFC);
+   
+   Attack RunaansOnhit = new Attack("RunaansOnhit"); 
+   RunaansOnhit.Dmg = 30;
+   combo.tilfoejAttack(RunaansOnhit);
+   
+   Attack Statikk = new Attack("Statikk"); 
+   Statikk.Dmg = 90;
+   Statikk.Time = 5;
+   combo.tilfoejAttack(Statikk);
+   
+   Attack StormRazor = new Attack("StormRazor"); 
+   StormRazor.Dmg = 100;
+   StormRazor.Time = 5;
+   combo.tilfoejAttack(StormRazor);
+   
+   Attack TriForce = new Attack("TriForce"); 
+   TriForce.Dmg = 0; // 50% ad
+   combo.tilfoejAttack(TriForce);
+   
+   Attack WitsEndOnhit = new Attack("WitsEndOnhit"); 
+   WitsEndOnhit.Dmg = 80;
+   combo.tilfoejAttack(WitsEndOnhit);
+   
    // combo laver
   // for (i<tiden til comboen divideret med angrebets time, i++1)
    // for autos skal den også kalde en funktion der applyer onhits
    
-   int totalDmg = combo.getDmg();  // kalder Dmg på hele træet
+   float totalDmg = combo.getDmg();  // kalder Dmg på hele træet
    float totalTime = combo.getTime(); // kalder Time på hele træet
    println(totalDmg);
    fill(255,0,255);
