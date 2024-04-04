@@ -136,37 +136,37 @@ void mouseReleased() {
     println("Jhin er valgt");
   }
 
-  if (borg.overCircle() && itemsCounter <= 5) {
+  if (borg.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.BladeOfTheRuinedKing(40,0,25,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-  if (bloodThirster.overCircle() && itemsCounter <= 5) {
+  if (bloodThirster.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.BloodThirster(50,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-  if (essenceReaver.overCircle() && itemsCounter <= 5) {
+  if (essenceReaver.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.EssenceReaver(60,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-  if (guinsoosRageblade.overCircle() && itemsCounter <= 5) {
+  if (guinsoosRageblade.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.GuinsoosRageblade(35,35,25,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-  if (immortalShieldbow.overCircle() && itemsCounter <= 5) {
+  if (immortalShieldbow.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.ImmortalShieldbow(50,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-  if (infinityEdge.overCircle() && itemsCounter <= 5) {
+  if (infinityEdge.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.InfinityEdge(65,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
@@ -174,91 +174,91 @@ void mouseReleased() {
 
 
 
-if (krakenSlayer.overCircle() && itemsCounter <= 5) {
+if (krakenSlayer.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.KrakenSlayer(40,0,35,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (lordDoms.overCircle() && itemsCounter <= 5) {
+if (lordDoms.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.LordDominiksRegards(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (mercurial.overCircle() && itemsCounter <= 5) {
+if (mercurial.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.MercurialScimitar(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (mortal.overCircle() && itemsCounter <= 5) {
+if (mortal.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.MortalReminder(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
-if (nashors.overCircle() && itemsCounter <= 5) {
+if (nashors.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.NashorsTooth(0,90,50,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
-if (navori.overCircle() && itemsCounter <= 5) {
+if (navori.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.NavoriQuickblades(60,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (dancers.overCircle() && itemsCounter <= 5) {
+if (dancers.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.PhantomDancer(20,0,30,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (fireCannon.overCircle() && itemsCounter <= 5) {
+if (fireCannon.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.RapidFirecannon(30,0,20,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (runaans.overCircle() && itemsCounter <= 5) {
+if (runaans.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.RunaansHurricane(40,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (shiv.overCircle() && itemsCounter <= 5) {
+if (shiv.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.StatikkShiv(50,0,30,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
 
-if (stormrazor.overCircle() && itemsCounter <= 5) {
+if (stormrazor.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.Stormrazor(60,0,15,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
-if (terminus.overCircle() && itemsCounter <= 5) {
+if (terminus.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.Terminus(40,0,30,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
-if (collector.overCircle() && itemsCounter <= 5) {
+if (collector.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.TheCollector(55,0,0,20);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
-if (trinity.overCircle() && itemsCounter <= 5) {
+if (trinity.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.TrinityForce(45,0,33,0);
     itemsCounter += 1;
     println(itemsCounter);
   }
   
-if (witsEnd.overCircle() && itemsCounter <= 5) {
+if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1) {
     buildet.WitsEnd(0,0,55,0);
     itemsCounter += 1;
     println(itemsCounter);
