@@ -2,6 +2,8 @@ ButtonCircle vayne;
 ButtonCircle ashe;
 ButtonCircle jhin;
 ButtonCircle udregnDPS;
+ButtonCircle deleteBuild;
+
 ButtonCircle bork;
 ButtonCircle bloodThirster;
 ButtonCircle essenceReaver;
@@ -66,6 +68,7 @@ void setup() {
   ashe = new ButtonCircle(1200, 100, 100, "AsheSquare.png");
   jhin = new ButtonCircle(width/2, 100, 100, "JhinSquare.png");
   udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png");
+  deleteBuild = new ButtonCircle(1550, 750, 100, "blåknap.png");
 
 
   bork = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png");
@@ -101,6 +104,8 @@ void draw() {
   ashe.tegnKnap();
   jhin.tegnKnap();
   udregnDPS.tegnKnap();
+  deleteBuild.tegnKnap();
+  
   bork.tegnKnap();
   bloodThirster.tegnKnap();
   essenceReaver.tegnKnap();
@@ -137,6 +142,7 @@ void draw() {
     if (champion.crit >= 100){
      champion.crit = 100; 
      }
+     
     println("crit er " + champion.crit);
   }
   
@@ -312,5 +318,54 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
   Calculate();
   }
 
+  if (deleteBuild.overCircle()){
+   champion.ad = 0;
+   champion.ap = 0;
+   champion.totalAs = 0;
+   champion.crit = 0;
+   champion.baseAs = 0;
+   champion.as = 0;
+   
+   
+   
+   
+   champCounter = 0;
+   itemsCounter = 0;
+   stop = false;
+   
+   bork1 = false;
+   bloodThirster1 = false;
+   essenceReaver1 = false;
+   guinsoosRageblade1 = false;
+   immortalShieldbow1 = false;
+   krakenSlayer1 = false;
+   lordDoms1 = false;
+   infinityEdge1 = false;
+   mercurial1 = false;
+   mortal1 = false;
+   nashors1 = false;
+   navori1 = false;
+   dancers1 = false;
+   fireCannon1 = false;
+   runaans1 = false;
+   shiv1 = false;
+   stormrazor1 = false;
+   terminus1 = false;
+   collector1 = false;
+   trinity1 = false;
+   witsEnd1 = false;
+   
+   
+   
+   println(champCounter);
+   println(itemsCounter);
+   println(champion.ad);
+   println(champion.ap);
+   println(champion.totalAs);
+   println(champion.crit);
+   println(champion.baseAs);
+   println(champion.as);
+   
+  }
   
 }

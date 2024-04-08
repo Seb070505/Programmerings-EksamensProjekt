@@ -60,7 +60,7 @@ Items KrakenSlayer(float ad, int ap, int as, int crit) {
     itemList.ad += ad;
     itemList.ap += ap;
     itemList.as += as;
-    itemList.crit = crit;
+    itemList.crit += crit;
     return this;
   }
 
