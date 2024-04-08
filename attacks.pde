@@ -1,23 +1,23 @@
 class Attack implements Component{
   String navn;
-  int Dmg;
+  float Dmg;
   float Time;
   
   
- int getAD(){
-   return Dmg;
+ float getAD(){
+   return champion.ad;
  }
  
  int getAP(){
-   return Dmg;
+   return champion.ap;
  }
  
  int getCrit(){
-   return Dmg;
+   return champion.crit;
  }
  
- int getAttackSpeed(){
-   return Dmg;
+ float getAttackSpeed(){
+   return champion.totalAs;
  }
   
   Attack(String navn){
@@ -31,7 +31,7 @@ class Attack implements Component{
   float getTime(){
     return Time;
   }
-  int getDmg(){
+  float getDmg(){
      text(navn, 100, position);
       position += 50;
     return Dmg;
