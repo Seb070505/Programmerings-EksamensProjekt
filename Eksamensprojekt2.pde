@@ -143,6 +143,10 @@ void draw() {
      champion.crit = 100; 
      }
      
+     if (champion.totalAs >= 2.5){
+      champion.totalAs = 2.5; 
+     }
+     
     println("crit er " + champion.crit);
   }
   
