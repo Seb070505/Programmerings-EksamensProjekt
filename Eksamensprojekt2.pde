@@ -129,6 +129,8 @@ void draw() {
   witsEnd.tegnKnap();
   
   if (itemsCounter == 6 && stop == false) {
+
+    
     champion = buildet.build();
     stop = true;
     println("works");
@@ -154,7 +156,7 @@ void draw() {
 
 void mouseReleased() {
   if (vayne.overCircle() && champCounter == 0) {
-    buildet.Vayne(1.027138, 99.95, 0, 0);
+    buildet.Vayne(1.027138, 99.95 + 55, 0, 0);
     champCounter += 1;
     println("Vayne er valgt");
   }
