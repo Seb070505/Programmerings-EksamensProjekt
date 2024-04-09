@@ -7,50 +7,66 @@ void Calculate(){
 combo = new Combo("combo"); //composite objekt består af leaf objekter
 //tilføj leaf objekter baseret på champ
    Attack autoattack = new Attack("autoattack"); //eksempel leaf objekt
-   autoattack.Dmg = 1; // get multipliers and find damage
-   autoattack.Time = 1; // get attackspeed find time 
+   autoattack.Dmg = champion.ad+((0.01*champion.crit)*(2-1))*champion.ad; // get multipliers and find damage SKAL ÆNDRE 2-1 TIL CRITDAMAGE-1
+   autoattack.Time = 1; // get attackspeed find time OR add based on attackspeed and totaltime
    combo.tilfoejAttack(autoattack); //tilføjer alle de oprettede attacks (forloop for autos baseret på tid?)
    
    Attack vayneQ = new Attack("vayneQ"); 
-   vayneQ.Dmg = 1; // 115% ad + 50% ap
-   vayneQ.Time = 2; 
+   vayneQ.Dmg = champion.ad*1.15+champion.ap*0.5; // 115% ad + 50% ap
+   vayneQ.Time = 1; 
    combo.tilfoejAttack(vayneQ);
    
    Attack vayneW = new Attack("vayneW"); //skal apply hver tredje auto
-   vayneW.Dmg = 0; //10% af modstander maxhp
+   vayneW.Dmg = champion.ad*0.1; //10% af modstander maxhp
    combo.tilfoejAttack(vayneW);
    
    Attack vayneE = new Attack("vayneE"); 
-   vayneE.Dmg = 285; //75% bonus ad
+   vayneE.Dmg = 285+champion.ad*0.75; //75% bonus ad
    vayneE.Time = 12; 
    combo.tilfoejAttack(vayneE);
    
-   Attack vayneR = new Attack("vayneR"); //kør inden de andre og tilføj ad og halver Q time
-   vayneR.Time = 70; 
-   combo.tilfoejAttack(vayneR);
+   Attack jhinQ = new Attack("jhinQ"); 
+   jhinQ.Dmg = 145+champion.ad*0.65+champion.ap*0.6; //
+   jhinQ.Time = 5; 
+   combo.tilfoejAttack(jhinQ);
+   
+   Attack jhinW = new Attack("jhinW");
+   jhinW.Dmg = 200+champion.ad*0.5; //
+   jhinW.Time = 12; 
+   combo.tilfoejAttack(jhinW);
+   
+   Attack jhinE = new Attack("jhinE"); 
+   jhinE.Dmg = 260+champion.ad*1.2+champion.ap; //
+   jhinE.Time = 14; 
+   combo.tilfoejAttack(jhinE);
+   
    
    Attack asheQ = new Attack("asheQ"); //giv 55% as og 25% ad multiplier til autos (kan gøres som onhit)
    asheQ.Dmg = 0; 
    combo.tilfoejAttack(asheQ);
    
    Attack asheW = new Attack("asheW"); 
-   asheW.Dmg = 80; //100% ad 
+   asheW.Dmg = 80+champion.ad; //100% ad 
    asheW.Time = 4; 
    combo.tilfoejAttack(asheW);
    
    Attack asheR = new Attack("asheR"); 
-   asheR.Dmg = 600; //120%ap 
+   asheR.Dmg = 600+champion.ap*1.2; //120%ap 
    asheR.Time = 60; 
    combo.tilfoejAttack(asheR);
    
    
    //item dammage
+   Attack asheOnhitQ = new Attack("asheOnhitQ"); //giv 55% as og 25% ad multiplier til autos (kan gøres som onhit)
+   asheOnhitQ.Dmg = champion.ad*0.25; 
+   combo.tilfoejAttack(asheOnhitQ);
+   
     Attack ReaverSpellblade = new Attack("ReaverSpellblade"); 
-   ReaverSpellblade.Dmg = 0; //25% ad
+   ReaverSpellblade.Dmg = champion.ad*0.25; //25% ad
    combo.tilfoejAttack(ReaverSpellblade);
    
    Attack BorkOnhit = new Attack("BorkOnhit"); 
-   BorkOnhit.Dmg = 0; // 9% ad
+   BorkOnhit.Dmg = champion.ad*0.09; // 9% ad
    combo.tilfoejAttack(BorkOnhit);
    
    Attack KrakenOnhit = new Attack("KrakenOnhit"); 
@@ -58,11 +74,11 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    combo.tilfoejAttack(KrakenOnhit);
    
    Attack LordDomOnhit = new Attack("LordDomOnhit"); 
-   LordDomOnhit.Dmg = 0; // 10% ad
+   LordDomOnhit.Dmg = champion.ad*0.1; // 10% ad
    combo.tilfoejAttack(LordDomOnhit);
    
    Attack NashorsOnhit = new Attack("NashorsOnhit"); 
-   NashorsOnhit.Dmg = 15; // 20% ap
+   NashorsOnhit.Dmg = 15+champion.ap*0.2; // 20% ap
    combo.tilfoejAttack(NashorsOnhit);
    
    Attack RFC = new Attack("RFC"); 
@@ -85,7 +101,7 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    combo.tilfoejAttack(StormRazor);
    
    Attack TriForce = new Attack("TriForce"); 
-   TriForce.Dmg = 0; // 50% ad
+   TriForce.Dmg = 0+champion.ad*0.5; // 50% ad
    combo.tilfoejAttack(TriForce);
    
    Attack WitsEndOnhit = new Attack("WitsEndOnhit"); 
