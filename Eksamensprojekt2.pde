@@ -55,6 +55,7 @@ boolean trinity1 = false;
 boolean witsEnd1 = false;
 
 
+
  Items buildet = new Items();
 
 
@@ -63,35 +64,34 @@ void setup() {
   background(255);
 
 
+  vayne = new ButtonCircle(400, 100, 100, "VayneSquare.png", false);
+  ashe = new ButtonCircle(1200, 100, 100, "AsheSquare.png", false);
+  jhin = new ButtonCircle(width/2, 100, 100, "JhinSquare.png", false);
+  udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png", false);
+  deleteBuild = new ButtonCircle(1550, 750, 100, "blåknap.png", false);
 
-  vayne = new ButtonCircle(400, 100, 100, "VayneSquare.png");
-  ashe = new ButtonCircle(1200, 100, 100, "AsheSquare.png");
-  jhin = new ButtonCircle(width/2, 100, 100, "JhinSquare.png");
-  udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png");
-  deleteBuild = new ButtonCircle(1550, 750, 100, "blåknap.png");
 
-
-  bork = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png");
-  bloodThirster = new ButtonCircle(350, 425, 100, "BloodThirster.png");
-  essenceReaver = new ButtonCircle(950, 550, 100, "EssenseReaver.png");
-  guinsoosRageblade = new ButtonCircle(500, 300, 100, "GuinsoosRageblade.png");
-  immortalShieldbow = new ButtonCircle(650, 300, 100, "ImmortalShieldbow.png");
-  infinityEdge = new ButtonCircle(800, 300, 100, "InfinityEdge.png");
-  krakenSlayer = new ButtonCircle(950, 300, 100, "KrakenSlayer.png");
-  lordDoms = new ButtonCircle(1100, 300, 100, "LordDominiksRegards.png");
-  mercurial = new ButtonCircle(650, 550, 100, "MercurialScimitar.png");
-  mortal = new ButtonCircle(350, 300, 100, "MortalReminder.png");
-  nashors = new ButtonCircle(1100, 550, 100, "NashorsTooth.png");
-  navori = new ButtonCircle(500, 550, 100, "NavoriQuickblades.png");
-  dancers = new ButtonCircle(1250, 425, 100, "PhantomDancer.png");
-  fireCannon = new ButtonCircle(1250,550, 100, "RapidFirecannon.png");
-  runaans = new ButtonCircle(350, 550, 100, "RunaansHurricane.png");
-  shiv = new ButtonCircle(500, 425, 100, "StattikShiv.png");
-  stormrazor = new ButtonCircle(650, 425, 100, "Stormrazor.png");
-  terminus = new ButtonCircle(800, 425, 100, "Terminus.png");
-  collector = new ButtonCircle(950, 425, 100, "TheCollecter.png");
-  trinity = new ButtonCircle(1100, 425, 100, "TrinityForce.png");
-  witsEnd = new ButtonCircle(1250, 300, 100, "WitsEnd.png");
+  bork = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png", false);
+  bloodThirster = new ButtonCircle(350, 425, 100, "BloodThirster.png", false);
+  essenceReaver = new ButtonCircle(950, 550, 100, "EssenseReaver.png", false);
+  guinsoosRageblade = new ButtonCircle(500, 300, 100, "GuinsoosRageblade.png", false);
+  immortalShieldbow = new ButtonCircle(650, 300, 100, "ImmortalShieldbow.png", false);
+  infinityEdge = new ButtonCircle(800, 300, 100, "InfinityEdge.png", false);
+  krakenSlayer = new ButtonCircle(950, 300, 100, "KrakenSlayer.png", false);
+  lordDoms = new ButtonCircle(1100, 300, 100, "LordDominiksRegards.png", false);
+  mercurial = new ButtonCircle(650, 550, 100, "MercurialScimitar.png", false);
+  mortal = new ButtonCircle(350, 300, 100, "MortalReminder.png", false);
+  nashors = new ButtonCircle(1100, 550, 100, "NashorsTooth.png", false);
+  navori = new ButtonCircle(500, 550, 100, "NavoriQuickblades.png", false);
+  dancers = new ButtonCircle(1250, 425, 100, "PhantomDancer.png", false);
+  fireCannon = new ButtonCircle(1250,550, 100, "RapidFirecannon.png", false);
+  runaans = new ButtonCircle(350, 550, 100, "RunaansHurricane.png", false);
+  shiv = new ButtonCircle(500, 425, 100, "StattikShiv.png", false);
+  stormrazor = new ButtonCircle(650, 425, 100, "Stormrazor.png", false);
+  terminus = new ButtonCircle(800, 425, 100, "Terminus.png", false);
+  collector = new ButtonCircle(950, 425, 100, "TheCollecter.png", false);
+  trinity = new ButtonCircle(1100, 425, 100, "TrinityForce.png", false);
+  witsEnd = new ButtonCircle(1250, 300, 100, "WitsEnd.png", false);
 
 }
 
@@ -128,6 +128,9 @@ void draw() {
   trinity.tegnKnap();
   witsEnd.tegnKnap();
   
+  
+  
+  
   if (itemsCounter == 6 && stop == false) {
 
     
@@ -158,16 +161,19 @@ void mouseReleased() {
   if (vayne.overCircle() && champCounter == 0) {
     buildet.Vayne(1.027138, 99.95 + 55, 0, 0);
     champCounter += 1;
+    vayne.klikked = true;
     println("Vayne er valgt");
   }
   if (ashe.overCircle() && champCounter == 0) {
     buildet.Ashe(1.0304938, 109.15, 0, 0);
     champCounter += 1;
+    ashe.klikked = true;
     println("Ashe er valgt");
   }
   if (jhin.overCircle() && champCounter == 0) {
     buildet.Jhin(0.92, 132.88, 0, 0);
     champCounter += 1;
+    jhin.klikked = true;
     println("Jhin er valgt");
   }
 
@@ -175,6 +181,7 @@ void mouseReleased() {
     buildet.BladeOfTheRuinedKing(40,0,25,0);
     itemsCounter += 1;
     bork1 = true;
+    bork.klikked = true;
     println(itemsCounter);
   }
 
@@ -182,6 +189,7 @@ void mouseReleased() {
     buildet.BloodThirster(50,0,0,20);
     itemsCounter += 1;
     bloodThirster1 = true;
+    bloodThirster.klikked = true;
     println(itemsCounter);
   }
 
@@ -189,6 +197,7 @@ void mouseReleased() {
     buildet.EssenceReaver(60,0,0,20);
     itemsCounter += 1;
     essenceReaver1 = true;
+    essenceReaver.klikked = true;
     println(itemsCounter);
   }
 
@@ -196,6 +205,7 @@ void mouseReleased() {
     buildet.GuinsoosRageblade(35,35,25,0);
     itemsCounter += 1;
     guinsoosRageblade1 = true;
+    guinsoosRageblade.klikked = true;
     println(itemsCounter);
   }
 
@@ -203,6 +213,7 @@ void mouseReleased() {
     buildet.ImmortalShieldbow(50,0,0,20);
     itemsCounter += 1;
     immortalShieldbow1 = true;
+    immortalShieldbow.klikked = true;
     println(itemsCounter);
   }
 
@@ -210,6 +221,7 @@ void mouseReleased() {
     buildet.InfinityEdge(65,0,0,20);
     itemsCounter += 1;
     infinityEdge1 = true;
+    infinityEdge.klikked = true;
     println(itemsCounter);
   }
 
@@ -219,6 +231,7 @@ if (krakenSlayer.overCircle() && itemsCounter <= 5 && champCounter == 1 && krake
     buildet.KrakenSlayer(40,0,35,20);
     itemsCounter += 1;
     krakenSlayer1 = true;
+    krakenSlayer.klikked = true;
     println(itemsCounter);
   }
 
@@ -226,6 +239,7 @@ if (lordDoms.overCircle() && itemsCounter <= 5 && champCounter == 1 && lordDoms1
     buildet.LordDominiksRegards(40,0,0,20);
     itemsCounter += 1;
     lordDoms1 = true;
+    lordDoms.klikked = true;
     println(itemsCounter);
   }
 
@@ -233,6 +247,7 @@ if (mercurial.overCircle() && itemsCounter <= 5 && champCounter == 1 && mercuria
     buildet.MercurialScimitar(40,0,0,20);
     itemsCounter += 1;
     mercurial1 = true;
+    mercurial.klikked = true;
     println(itemsCounter);
   }
 
@@ -240,6 +255,7 @@ if (mortal.overCircle() && itemsCounter <= 5 && champCounter == 1 && mortal1 == 
     buildet.MortalReminder(40,0,0,20);
     itemsCounter += 1;
     mortal1 = true;
+    mortal.klikked = true;
     println(itemsCounter);
   }
   
@@ -247,6 +263,7 @@ if (nashors.overCircle() && itemsCounter <= 5 && champCounter == 1 && nashors1 =
     buildet.NashorsTooth(0,90,50,0);
     itemsCounter += 1;
     nashors1 = true;
+    nashors.klikked = true;
     println(itemsCounter);
   }
   
@@ -254,6 +271,7 @@ if (navori.overCircle() && itemsCounter <= 5 && champCounter == 1 && navori1 == 
     buildet.NavoriQuickblades(60,0,0,20);
     itemsCounter += 1;
     navori1 = true;
+    navori.klikked = true;
     println(itemsCounter);
   }
 
@@ -261,6 +279,7 @@ if (dancers.overCircle() && itemsCounter <= 5 && champCounter == 1 && dancers1 =
     buildet.PhantomDancer(20,0,30,20);
     itemsCounter += 1;
     dancers1 = true;
+    dancers.klikked = true;
     println(itemsCounter);
   }
 
@@ -268,6 +287,7 @@ if (fireCannon.overCircle() && itemsCounter <= 5 && champCounter == 1 && fireCan
     buildet.RapidFirecannon(30,0,20,20);
     itemsCounter += 1;
     fireCannon1 = true;
+    fireCannon.klikked = true;
     println(itemsCounter);
   }
 
@@ -275,6 +295,7 @@ if (runaans.overCircle() && itemsCounter <= 5 && champCounter == 1 && runaans1 =
     buildet.RunaansHurricane(40,0,0,20);
     itemsCounter += 1;
     runaans1 = true;
+    runaans.klikked = true;
     println(itemsCounter);
   }
 
@@ -282,6 +303,7 @@ if (shiv.overCircle() && itemsCounter <= 5 && champCounter == 1 && shiv1 == fals
     buildet.StatikkShiv(50,0,30,20);
     itemsCounter += 1;
     shiv1 = true;
+    shiv.klikked = true;
     println(itemsCounter);
   }
 
@@ -289,6 +311,7 @@ if (stormrazor.overCircle() && itemsCounter <= 5 && champCounter == 1 && stormra
     buildet.Stormrazor(60,0,15,20);
     itemsCounter += 1;
     stormrazor1 = true;
+    stormrazor.klikked = true;
     println(itemsCounter);
   }
   
@@ -296,6 +319,7 @@ if (terminus.overCircle() && itemsCounter <= 5 && champCounter == 1 && terminus1
     buildet.Terminus(40,0,30,0);
     itemsCounter += 1;
     terminus1 = true;
+    terminus.klikked = true;
     println(itemsCounter);
   }
   
@@ -303,6 +327,7 @@ if (collector.overCircle() && itemsCounter <= 5 && champCounter == 1 && collecto
     buildet.TheCollector(55,0,0,20);
     itemsCounter += 1;
     collector1 = true;
+    collector.klikked = true;
     println(itemsCounter);
   }
   
@@ -310,6 +335,7 @@ if (trinity.overCircle() && itemsCounter <= 5 && champCounter == 1 && trinity1 =
     buildet.TrinityForce(45,0,33,0);
     itemsCounter += 1;
     trinity1 = true;
+    trinity.klikked = true;
     println(itemsCounter);
   }
   
@@ -317,6 +343,7 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
     buildet.WitsEnd(0,0,55,0);
     itemsCounter += 1;
     witsEnd1 = true;
+    witsEnd.klikked = true;
     println(itemsCounter);
   }
 
@@ -371,6 +398,32 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
    println(champion.crit);
    println(champion.baseAs);
    println(champion.as);
+   
+   
+   vayne.klikked = false;
+   ashe.klikked = false;
+   jhin.klikked = false;
+   bork.klikked = false;
+   bloodThirster.klikked = false;
+   essenceReaver.klikked = false;
+   guinsoosRageblade.klikked = false;
+   immortalShieldbow.klikked = false;
+   infinityEdge.klikked = false;
+   krakenSlayer.klikked = false;
+   lordDoms.klikked = false;
+   mercurial.klikked = false;
+   mortal.klikked = false;
+   nashors.klikked = false;
+   navori.klikked = false;
+   dancers.klikked = false;
+   fireCannon.klikked = false;
+   runaans.klikked = false;
+   shiv.klikked = false;
+   stormrazor.klikked = false;
+   terminus.klikked = false;
+   collector.klikked = false;
+   trinity.klikked = false;
+   witsEnd.klikked = false;
    
   }
   
