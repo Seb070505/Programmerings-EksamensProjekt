@@ -29,6 +29,7 @@ ButtonCircle witsEnd;
 ChampionBuild champion;
 
 int champCounter;
+int champ;
 int itemsCounter;
 boolean stop = false;
 
@@ -162,18 +163,21 @@ void mouseReleased() {
     buildet.Vayne(1.027138, 99.95 + 55, 0, 0);
     champCounter += 1;
     vayne.klikked = true;
+    champ = 1;
     println("Vayne er valgt");
   }
   if (ashe.overCircle() && champCounter == 0) {
     buildet.Ashe(1.0304938, 109.15, 0, 0);
     champCounter += 1;
     ashe.klikked = true;
+    champ = 2;
     println("Ashe er valgt");
   }
   if (jhin.overCircle() && champCounter == 0) {
     buildet.Jhin(0.92, 132.88, 0, 0);
     champCounter += 1;
     jhin.klikked = true;
+    champ = 3;
     println("Jhin er valgt");
   }
 
@@ -348,7 +352,7 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
   }
 
   if (udregnDPS.overCircle()) {
-  Calculate();
+  makeCombo();
   }
 
   if (deleteBuild.overCircle()){
