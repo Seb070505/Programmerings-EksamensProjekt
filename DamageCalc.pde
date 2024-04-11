@@ -108,6 +108,13 @@ combo = new Combo("combo"); //composite objekt består af leaf objekter
    WitsEndOnhit.Dmg = 80;
    combo.tilfoejAttack(WitsEndOnhit);
    
+   //switch statement fra 1-3 med champion
+   //for loop for hver ability baseret på champion, kører  i++1 indtil 60/time    autos er 60*as
+   // onhits køres sammen med autos (autos køre for alle champs) og er if statements
+   // onhits er en metode for sig selv lavet af et if statement for hver slags
+   //method der kører alle de^^ andre methods
+   
+   
    // combo laver
   // for (i<tiden til comboen divideret med angrebets time, i++1)
    // for autos skal den også kalde en funktion der applyer onhits
