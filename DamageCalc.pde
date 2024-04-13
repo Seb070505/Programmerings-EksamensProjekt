@@ -234,5 +234,4 @@ void makeCombo(){
    fill(255,0,255);
    text(totalDmg + " is the total damage.", 100, position + 50);
    text(totalTime + " is the total time.", 100, position + 85);
-   noLoop();
 }
