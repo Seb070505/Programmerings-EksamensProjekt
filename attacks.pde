@@ -32,8 +32,6 @@ class Attack implements Component{
     return Time;
   }
   float getDmg(){
-     text(navn, 100, position);
-      position += 50;
     return Dmg;
   }
 }

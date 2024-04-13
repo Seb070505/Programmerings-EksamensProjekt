@@ -1,6 +1,5 @@
 
 Combo combo;
-int position = 100;
 void runAutos(){
   Attack autoattack = new Attack("autoattack"); //leaf objekt
   if (infinityEdge1==false){
@@ -25,11 +24,11 @@ void runVayne(){
    vayneE.Dmg = 285+champion.ad*0.75; //75% bonus ad
    vayneE.Time = 12; 
    
-for (int i = 0; i < 60/1; i = i+1) {
+for (int i = 0; i < 60/vayneQ.Time; i = i+1) {
   combo.tilfoejAttack(vayneQ);
   }
 
-for (int i = 0; i < 60/12; i = i+1) {
+for (int i = 0; i < 60/vayneE.Time; i = i+1) {
   combo.tilfoejAttack(vayneE);
   }
 }
@@ -43,11 +42,11 @@ void runAshe(){
    asheR.Dmg = 600+champion.ap*1.2; //120%ap 
    asheR.Time = 60; 
    
-  for (int i = 0; i < 60/4; i = i+1) {
+  for (int i = 0; i < 60/asheW.Time; i = i+1) {
     combo.tilfoejAttack(asheW);
   }
   
-  for (int i = 0; i < 60/60; i = i+1) {
+  for (int i = 0; i < 60/asheR.Time; i = i+1) {
     combo.tilfoejAttack(asheR);
   }
 }
@@ -66,15 +65,15 @@ void runJhin(){
    jhinE.Dmg = 260+champion.ad*1.2+champion.ap; //
    jhinE.Time = 14; 
    
-  for (int i = 0; i < 60/5; i = i+1) {
+  for (int i = 0; i < 60/jhinQ.Time; i = i+1) {
     combo.tilfoejAttack(jhinQ);
   }
   
-  for (int i = 0; i < 60/12; i = i+1) {
+  for (int i = 0; i < 60/jhinW.Time; i = i+1) {
     combo.tilfoejAttack(jhinW);
   }
   
-  for (int i = 0; i < 60/14; i = i+1) {
+  for (int i = 0; i < 60/jhinE.Time; i = i+1) {
     combo.tilfoejAttack(jhinE);
   }
 }
@@ -202,41 +201,8 @@ void makeCombo(){
      
    }
    
-  
-//BaseDamage=(ScalingAD*AD)+(ScalingAP*AP)
-//AverageDamage=BaseDamage+((1%CritChance)*(CritDamage-1)*BaseDamage
-
-   
-   
-   
- 
-   
-   
-   
-   //item dammage
-   
-
-   
-     
-     
-     
-     
-     
-   //switch statement fra 1-3 med champion
-   //for loop for hver ability baseret på champion, kører  i++1 indtil 60/time    autos er 60*as
-   // onhits køres sammen med autos (autos køre for alle champs) og er if statements
-   // onhits er en metode for sig selv lavet af et if statement for hver slags
-   //method der kører alle de^^ andre methods
-   
-   
-   // combo laver
-  // for (i<tiden til comboen divideret med angrebets time, i++1)
-   // for autos skal den også kalde en funktion der applyer onhits
-   
-   float totalDmg = combo.getDmg();  // kalder Dmg på hele træet
-   float totalTime = combo.getTime(); // kalder Time på hele træet
+   float totalDmg = combo.getDmg();
    println(totalDmg);
    fill(255,0,255);
-   text(totalDmg + " is the total damage.", 100, position + 50);
-   text(totalTime + " is the total time.", 100, position + 85);
+   text(totalDmg/60 + " is the average damage per second.", 50, 200);
 }
