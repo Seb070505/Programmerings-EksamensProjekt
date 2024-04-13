@@ -62,7 +62,7 @@ boolean witsEnd1 = false;
 
 void setup() {
   size(1600, 800);
-  background(255);
+  background(0);
 
 
   vayne = new ButtonCircle(400, 100, 100, "VayneSquare.png", false);
@@ -100,6 +100,10 @@ void setup() {
 
 void draw() {
 
+  if (stop == false){
+   background(0); 
+  }
+  
   
   vayne.tegnKnap();
   ashe.tegnKnap();
@@ -139,11 +143,15 @@ void draw() {
     stop = true;
     println("works");
     println("ad er " + champion.ad);
+    text("ad er " + champion.ad, 1400, 100);
+    
     println("ap er " + champion.ap);
+    text("ap er " + champion.ap, 1400, 150);
     
     champion.totalAs = champion.baseAs + champion.baseAs * champion.as/100;
     
     println("attack speed er " + champion.totalAs);
+    text("attack speed er " + champion.totalAs, 1400, 200);
     
     if (champion.crit >= 100){
      champion.crit = 100; 
@@ -154,6 +162,7 @@ void draw() {
      }
      
     println("crit er " + champion.crit);
+    text("crit er " + champion.crit, 1400, 250);
   }
   
 }
