@@ -4,7 +4,7 @@ int position = 100;
 void runAutos(){
   Attack autoattack = new Attack("autoattack"); //leaf objekt
    autoattack.Dmg = champion.ad+((0.01*champion.crit)*(2-1))*champion.ad; //SKAL ÆNDRE 2-1 TIL CRITDAMAGE-1
-  for (int i = 0; i < 60*champion.as; i = i+1) {
+  for (int i = 0; i < 60*champion.totalAs; i = i+1) {
     combo.tilfoejAttack(autoattack);
     onHit();
   }
