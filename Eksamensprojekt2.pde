@@ -158,7 +158,7 @@ void draw() {
     
     if (Jhin == true){
      champion.totalAs = 0.92; 
-     champion.ad = champion.ad + champion.ad/100*40 + champion.ad * champion.crit/100*0.3 + champion.ad * champion.as/100*0.25;
+     champion.ad = champion.ad + (champion.ad/100)*40 + champion.ad * (champion.crit/100)*0.3 + champion.ad * (champion.as/100)*0.25;
     }
     
     
