@@ -103,18 +103,15 @@ void onHit(){
    
    Attack RFC = new Attack("RFC"); 
    RFC.Dmg = 60;
-   RFC.Time = 5;
    
    Attack RunaansOnhit = new Attack("RunaansOnhit"); 
    RunaansOnhit.Dmg = 30;
    
    Attack Statikk = new Attack("Statikk"); 
    Statikk.Dmg = 90;
-   Statikk.Time = 5;
    
    Attack StormRazor = new Attack("StormRazor"); 
    StormRazor.Dmg = 100;
-   StormRazor.Time = 5;
    
    Attack TriForce = new Attack("TriForce"); 
    TriForce.Dmg = 0+champion.ad*0.5; // 50% ad
