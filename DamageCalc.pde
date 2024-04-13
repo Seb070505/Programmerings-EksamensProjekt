@@ -200,6 +200,5 @@ void makeCombo(){
    
    float totalDmg = combo.getDmg();
    println(totalDmg);
-   fill(255,0,255);
    text(totalDmg/60 + " is the average damage per second.", 50, 200);
 }
