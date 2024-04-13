@@ -55,6 +55,8 @@ boolean collector1 = false;
 boolean trinity1 = false;
 boolean witsEnd1 = false;
 
+boolean Jhin = false;
+
 
 
  Items buildet = new Items();
@@ -149,6 +151,14 @@ void draw() {
     text("ap er " + champion.ap, 1400, 150);
     
     champion.totalAs = champion.baseAs + champion.baseAs * champion.as/100;
+     
+    if (champion.totalAs >= 2.5){
+      champion.totalAs = 2.5; 
+     }
+    
+    if (Jhin == true){
+     champion.totalAs = 0.92; 
+    }
     
     println("attack speed er " + champion.totalAs);
     text("attack speed er " + champion.totalAs, 1400, 200);
@@ -157,12 +167,9 @@ void draw() {
      champion.crit = 100; 
      }
      
-     if (champion.totalAs >= 2.5){
-      champion.totalAs = 2.5; 
-     }
      
-    println("crit er " + champion.crit);
-    text("crit er " + champion.crit, 1400, 250);
+    println("crit er " + champion.crit + "%");
+    text("crit er " + champion.crit + "%", 1400, 250);
   }
   
 }
@@ -187,6 +194,7 @@ void mouseReleased() {
     champCounter += 1;
     jhin.klikked = true;
     champ = 3;
+    Jhin = true;
     println("Jhin er valgt");
   }
 
@@ -400,6 +408,8 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
    collector1 = false;
    trinity1 = false;
    witsEnd1 = false;
+   
+   Jhin = false;
    
    
    

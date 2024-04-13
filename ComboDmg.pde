@@ -10,8 +10,7 @@ class Combo implements Component {
   void tilfoejAttack(Component newattacks){
     attacks.add(newattacks);
   }
- // void setHoldbarhed(){
- // }
+
   String getNavn(){
     return navn;
   }
