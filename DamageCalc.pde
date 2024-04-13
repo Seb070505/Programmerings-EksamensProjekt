@@ -3,7 +3,12 @@ Combo combo;
 int position = 100;
 void runAutos(){
   Attack autoattack = new Attack("autoattack"); //leaf objekt
-   autoattack.Dmg = champion.ad+((0.01*champion.crit)*(2-1))*champion.ad; //SKAL ÆNDRE 2-1 TIL CRITDAMAGE-1
+  if (infinityEdge1==false){
+   autoattack.Dmg = champion.ad+((0.01*champion.crit)*0.75)*champion.ad;
+  }
+  else{
+   autoattack.Dmg = champion.ad+((0.01*champion.crit)*1.25)*champion.ad;
+  }
   for (int i = 0; i < 60*champion.totalAs; i = i+1) {
     combo.tilfoejAttack(autoattack);
     onHit();
