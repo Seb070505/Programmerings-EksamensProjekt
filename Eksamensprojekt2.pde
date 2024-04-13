@@ -56,6 +56,7 @@ boolean trinity1 = false;
 boolean witsEnd1 = false;
 
 boolean Jhin = false;
+boolean kørerCombo = false;
 
 
 
@@ -72,6 +73,7 @@ void setup() {
   jhin = new ButtonCircle(width/2, 100, 100, "JhinSquare.png", false);
   udregnDPS = new ButtonCircle(100, 100, 100, "rødknap.png", false);
   deleteBuild = new ButtonCircle(1550, 750, 100, "blåknap.png", false);
+
 
 
   bork = new ButtonCircle(800, 550, 100, "BladeOfTheRuinedKing.png", false);
@@ -135,6 +137,8 @@ void draw() {
   trinity.tegnKnap();
   witsEnd.tegnKnap();
   
+
+  
   
   
   
@@ -143,12 +147,8 @@ void draw() {
     
     champion = buildet.build();
     stop = true;
-    println("works");
-    println("ad er " + champion.ad);
-    text("ad er " + champion.ad, 1400, 100);
+    kørerCombo = true;
     
-    println("ap er " + champion.ap);
-    text("ap er " + champion.ap, 1400, 150);
     
     champion.totalAs = champion.baseAs + champion.baseAs * champion.as/100;
      
@@ -160,18 +160,25 @@ void draw() {
      champion.totalAs = 0.92; 
     }
     
-    println("attack speed er " + champion.totalAs);
-    text("attack speed er " + champion.totalAs, 1400, 200);
     
     if (champion.crit >= 100){
      champion.crit = 100; 
      }
      
      
-    println("crit er " + champion.crit + "%");
+    text("ad er " + champion.ad, 1400, 100);
+    text("ap er " + champion.ap, 1400, 150);
+    text("attack speed er " + champion.totalAs, 1400, 200);
     text("crit er " + champion.crit + "%", 1400, 250);
   }
-  
+   
+   
+   
+   text("UDREGN SKADE", 35, 40);
+   text("Karakterer", 760, 30);
+   text("Items", 780, 230);
+   text("Reset build", 1498, 690);
+   textSize(20);
 }
 
 void mouseReleased() {
@@ -369,10 +376,13 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
   }
 
   if (udregnDPS.overCircle()) {
-  makeCombo();
+ 
+    if (kørerCombo == true){
+    makeCombo();
+    }
   }
 
-  if (deleteBuild.overCircle()){
+  if (deleteBuild.overCircle() && kørerCombo == true){
    champion.ad = 0;
    champion.ap = 0;
    champion.totalAs = 0;
@@ -447,6 +457,8 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
    collector.klikked = false;
    trinity.klikked = false;
    witsEnd.klikked = false;
+   
+   kørerCombo = false;
    
   }
   
