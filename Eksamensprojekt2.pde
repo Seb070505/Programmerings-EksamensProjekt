@@ -188,14 +188,12 @@ void mouseReleased() {
     champCounter += 1;
     vayne.klikked = true;
     champ = 1;
-    println("Vayne er valgt");
   }
   if (ashe.overCircle() && champCounter == 0) {
     buildet.Ashe(1.0304938, 109.15, 0, 0);
     champCounter += 1;
     ashe.klikked = true;
     champ = 2;
-    println("Ashe er valgt");
   }
   if (jhin.overCircle() && champCounter == 0) {
     buildet.Jhin(0.92, 132.88, 0, 0);
@@ -203,7 +201,6 @@ void mouseReleased() {
     jhin.klikked = true;
     champ = 3;
     Jhin = true;
-    println("Jhin er valgt");
   }
 
   if (bork.overCircle() && itemsCounter <= 5 && champCounter == 1 && bork1 == false) {
@@ -211,7 +208,6 @@ void mouseReleased() {
     itemsCounter += 1;
     bork1 = true;
     bork.klikked = true;
-    println(itemsCounter);
   }
 
   if (bloodThirster.overCircle() && itemsCounter <= 5 && champCounter == 1 && bloodThirster1 == false) {
@@ -219,7 +215,6 @@ void mouseReleased() {
     itemsCounter += 1;
     bloodThirster1 = true;
     bloodThirster.klikked = true;
-    println(itemsCounter);
   }
 
   if (essenceReaver.overCircle() && itemsCounter <= 5 && champCounter == 1 && essenceReaver1 == false) {
@@ -227,7 +222,6 @@ void mouseReleased() {
     itemsCounter += 1;
     essenceReaver1 = true;
     essenceReaver.klikked = true;
-    println(itemsCounter);
   }
 
   if (guinsoosRageblade.overCircle() && itemsCounter <= 5 && champCounter == 1 && guinsoosRageblade1 == false) {
@@ -235,7 +229,6 @@ void mouseReleased() {
     itemsCounter += 1;
     guinsoosRageblade1 = true;
     guinsoosRageblade.klikked = true;
-    println(itemsCounter);
   }
 
   if (immortalShieldbow.overCircle() && itemsCounter <= 5 && champCounter == 1 && immortalShieldbow1 == false) {
@@ -243,7 +236,6 @@ void mouseReleased() {
     itemsCounter += 1;
     immortalShieldbow1 = true;
     immortalShieldbow.klikked = true;
-    println(itemsCounter);
   }
 
   if (infinityEdge.overCircle() && itemsCounter <= 5 && champCounter == 1 && infinityEdge1 == false) {
@@ -251,7 +243,6 @@ void mouseReleased() {
     itemsCounter += 1;
     infinityEdge1 = true;
     infinityEdge.klikked = true;
-    println(itemsCounter);
   }
 
 
@@ -261,7 +252,6 @@ if (krakenSlayer.overCircle() && itemsCounter <= 5 && champCounter == 1 && krake
     itemsCounter += 1;
     krakenSlayer1 = true;
     krakenSlayer.klikked = true;
-    println(itemsCounter);
   }
 
 if (lordDoms.overCircle() && itemsCounter <= 5 && champCounter == 1 && lordDoms1 == false) {
@@ -269,7 +259,6 @@ if (lordDoms.overCircle() && itemsCounter <= 5 && champCounter == 1 && lordDoms1
     itemsCounter += 1;
     lordDoms1 = true;
     lordDoms.klikked = true;
-    println(itemsCounter);
   }
 
 if (mercurial.overCircle() && itemsCounter <= 5 && champCounter == 1 && mercurial1 == false) {
@@ -277,7 +266,6 @@ if (mercurial.overCircle() && itemsCounter <= 5 && champCounter == 1 && mercuria
     itemsCounter += 1;
     mercurial1 = true;
     mercurial.klikked = true;
-    println(itemsCounter);
   }
 
 if (mortal.overCircle() && itemsCounter <= 5 && champCounter == 1 && mortal1 == false) {
@@ -285,7 +273,6 @@ if (mortal.overCircle() && itemsCounter <= 5 && champCounter == 1 && mortal1 == 
     itemsCounter += 1;
     mortal1 = true;
     mortal.klikked = true;
-    println(itemsCounter);
   }
   
 if (nashors.overCircle() && itemsCounter <= 5 && champCounter == 1 && nashors1 == false) {
@@ -293,7 +280,6 @@ if (nashors.overCircle() && itemsCounter <= 5 && champCounter == 1 && nashors1 =
     itemsCounter += 1;
     nashors1 = true;
     nashors.klikked = true;
-    println(itemsCounter);
   }
   
 if (navori.overCircle() && itemsCounter <= 5 && champCounter == 1 && navori1 == false) {
@@ -301,7 +287,6 @@ if (navori.overCircle() && itemsCounter <= 5 && champCounter == 1 && navori1 == 
     itemsCounter += 1;
     navori1 = true;
     navori.klikked = true;
-    println(itemsCounter);
   }
 
 if (dancers.overCircle() && itemsCounter <= 5 && champCounter == 1 && dancers1 == false) {
@@ -309,7 +294,6 @@ if (dancers.overCircle() && itemsCounter <= 5 && champCounter == 1 && dancers1 =
     itemsCounter += 1;
     dancers1 = true;
     dancers.klikked = true;
-    println(itemsCounter);
   }
 
 if (fireCannon.overCircle() && itemsCounter <= 5 && champCounter == 1 && fireCannon1 == false) {
@@ -317,7 +301,6 @@ if (fireCannon.overCircle() && itemsCounter <= 5 && champCounter == 1 && fireCan
     itemsCounter += 1;
     fireCannon1 = true;
     fireCannon.klikked = true;
-    println(itemsCounter);
   }
 
 if (runaans.overCircle() && itemsCounter <= 5 && champCounter == 1 && runaans1 == false) {
@@ -325,7 +308,6 @@ if (runaans.overCircle() && itemsCounter <= 5 && champCounter == 1 && runaans1 =
     itemsCounter += 1;
     runaans1 = true;
     runaans.klikked = true;
-    println(itemsCounter);
   }
 
 if (shiv.overCircle() && itemsCounter <= 5 && champCounter == 1 && shiv1 == false) {
@@ -333,7 +315,6 @@ if (shiv.overCircle() && itemsCounter <= 5 && champCounter == 1 && shiv1 == fals
     itemsCounter += 1;
     shiv1 = true;
     shiv.klikked = true;
-    println(itemsCounter);
   }
 
 if (stormrazor.overCircle() && itemsCounter <= 5 && champCounter == 1 && stormrazor1 == false) {
@@ -341,7 +322,6 @@ if (stormrazor.overCircle() && itemsCounter <= 5 && champCounter == 1 && stormra
     itemsCounter += 1;
     stormrazor1 = true;
     stormrazor.klikked = true;
-    println(itemsCounter);
   }
   
 if (terminus.overCircle() && itemsCounter <= 5 && champCounter == 1 && terminus1 == false) {
@@ -349,7 +329,6 @@ if (terminus.overCircle() && itemsCounter <= 5 && champCounter == 1 && terminus1
     itemsCounter += 1;
     terminus1 = true;
     terminus.klikked = true;
-    println(itemsCounter);
   }
   
 if (collector.overCircle() && itemsCounter <= 5 && champCounter == 1 && collector1 == false) {
@@ -357,7 +336,6 @@ if (collector.overCircle() && itemsCounter <= 5 && champCounter == 1 && collecto
     itemsCounter += 1;
     collector1 = true;
     collector.klikked = true;
-    println(itemsCounter);
   }
   
 if (trinity.overCircle() && itemsCounter <= 5 && champCounter == 1 && trinity1 == false) {
@@ -365,7 +343,6 @@ if (trinity.overCircle() && itemsCounter <= 5 && champCounter == 1 && trinity1 =
     itemsCounter += 1;
     trinity1 = true;
     trinity.klikked = true;
-    println(itemsCounter);
   }
   
 if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 == false) {
@@ -373,7 +350,6 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
     itemsCounter += 1;
     witsEnd1 = true;
     witsEnd.klikked = true;
-    println(itemsCounter);
   }
 
   if (udregnDPS.overCircle()) {
@@ -422,18 +398,6 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
    
    Jhin = false;
    
-   
-   
-   println(champCounter);
-   println(itemsCounter);
-   println(champion.ad);
-   println(champion.ap);
-   println(champion.totalAs);
-   println(champion.crit);
-   println(champion.baseAs);
-   println(champion.as);
-   
-   
    vayne.klikked = false;
    ashe.klikked = false;
    jhin.klikked = false;
@@ -459,8 +423,6 @@ if (witsEnd.overCircle() && itemsCounter <= 5 && champCounter == 1 && witsEnd1 =
    trinity.klikked = false;
    witsEnd.klikked = false;
    
-   kørerCombo = false;
-   
+   kørerCombo = false; 
   }
-  
 }
